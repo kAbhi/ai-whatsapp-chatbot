@@ -61,7 +61,7 @@ def process_logic(user_text: str, sender: str) -> str:
             return f"Error connecting to LLM: {str(e)}"
 
 def send_whatsapp_message(to_number: str, text: str):
-    url = f"https://graph.facebook.com/v25.0/{PHONE_NUMBER_ID}/messages"
+    url = f"https://graph.facebook.com/v26.0/{PHONE_NUMBER_ID}/messages"
     headers = {
         "Authorization": f"Bearer {WHATSAPP_TOKEN}",
         "Content-Type": "application/json",
